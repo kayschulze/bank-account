@@ -21,13 +21,16 @@ Transaction.prototype.calcNewDeposit = function() {
 $(function() {
   $("#bankInput").submit(function(event) {
     event.preventDefault();
-    var inputtedName = $("input.yourname").val();
+    var inputtedName = $("input#yourname").val();
     var inputtedInitialDeposit = parseInt($("input.initial-deposit").val());
     var inputtedDeposit = parseInt($("input.deposit").val());
     var inputtedWithdrawal = parseInt($("input.withdrawal").val());
     var newTransaction = new Transaction(inputtedName, inputtedInitialDeposit, inputtedDeposit, inputtedWithdrawal);
-    console.log(newTransaction);
 
-    $("#currentbalance").text(newTransaction.calcNewDeposit());
+    var displayAnswer = newTransaction.calcNewDeposit();
+
+    $("h4.outputReading").text(displayAnswer);
+
+    // $("outputReading#currentbalance").text(newTransaction.calcNewDeposit());
   });
 });

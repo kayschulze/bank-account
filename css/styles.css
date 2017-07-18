@@ -19,8 +19,13 @@
 h4 {
   background-color: white;
   width: 10%;
+  margin: auto;
 }
 
-.outputReading {
+/*.outputReading {
   align-content: center;
-}
+}*/
+
+/*.showBalance {
+  position: relative;
+}*/
