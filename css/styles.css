@@ -1,0 +1,26 @@
+.box {
+  background-color: lightblue;
+  padding: 20px;
+  margin: 20px;
+}
+
+.currentbalance {
+  text-align: center;
+}
+
+.row {
+  text-align: center;
+}
+
+.form-group {
+  float: right;
+}
+
+h4 {
+  background-color: white;
+  width: 10%;
+}
+
+.outputReading {
+  align-content: center;
+}
